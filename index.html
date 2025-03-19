@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Clarence Afful">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML% | Forms</title>
+</head>
+
+<body>
+    <p>Fruits:</p>
+    <ol type="i">
+        <li>Pawpaw</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Star fruit</li>
+        <li>Grapes</li>
+    </ol>
+
+    <br>
+
+    <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        width="200" height="200" alt="concrete road between trees">
+
+    <br>
+    <br>
+
+    <table>
+        <caption>Records:</caption>
+        <!-- create table columns -->
+        <thead>
+            <tr> <!-- entry-->
+                <td>Name</td>
+                <td>Address</td>
+                <td>Mobile</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <!-- create table content -->
+        <tbody>
+            <tr>
+                <td>Chakin</td>
+                <td>Kenya</td>
+                <td>83231313</td>
+                <td>chukcha@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Roland </td>
+                <td>Ghana</td>
+                <td>2337870890</td>
+                <td>rowsahin@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kelvin </td>
+                <td>Mauritius</td>
+                <td>8723231313</td>
+                <td>okagyei@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Samuel</td>
+                <td>Togo</td>
+                <td>9723231313</td>
+                <td>nsam32@gmail.com</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Ivoire</td>
+                <td>6423231313</td>
+                <td>athurj@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <form action="#">
+        <h2>Complete the form below</h2>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="0" max="40" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+
+        <br>
+
+        <label for="pay">Payment: </label>
+        <select name="pay" id="pay" required>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="momo">MobileMoney</option>
+        </select>
+
+        <br>
+        <br>
+
+        <div>
+            <!-- use common name for grouping; for selecting only one option -->
+            <input type="radio" name="status" id="mr" value="mr">
+            <label for="mr">Mr.</label>
+
+            <input type="radio" name="status" id=" mrs" value="mrs">
+            <label for="mrs">Mrs.</label>
+
+            <input type="radio" name="status" id="single" value="single">
+            <label for="single">Single</label>
+        </div>
+
+        <br>
+
+
+        <fieldset>
+            <legend>Disabilities</legend>
+            <label for="yes">Yes</label>
+            <input type="checkbox" name="pwd" id="yes" value="yes">
+
+            <label for="no">No</label>
+            <input type="checkbox" name="pwd" id="no" value="no">
+        </fieldset>
+
+        <br>
+
+        <input type="reset">
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+
+</html>
